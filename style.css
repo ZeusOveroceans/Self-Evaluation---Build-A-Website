@@ -1,0 +1,74 @@
+body {
+    background-color: black;
+    color: #41ead4;
+    border: 2px solid red;
+    margin: 0;
+    font-family: 'YourFirstFont', sans-serif;
+}
+
+nav {
+  background-color: red;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    color: black;
+    cursor: pointer;
+    text: bold;
+}
+
+.active {
+    pointer-events: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://cdn.trendhunterstatic.com/thumbs/underwater-hotel-room.jpeg?auto=webp') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff9f1c;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.about {
+    padding: 40px;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+    max-width: 300px;
+}
+
+.about-content {
+    text-align: justify;
+}
+
+/* LevelUp: Responsive Units */
+h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+/* LevelUp: Hover Transition */
+nav li, img {
+    transition: color 0.3s ease-in-out;
+}
+
+nav li:hover, img:hover {
+    color: #fdfffc;
+}
